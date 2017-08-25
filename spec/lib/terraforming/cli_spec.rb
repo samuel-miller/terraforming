@@ -74,6 +74,13 @@ module Terraforming
         it_behaves_like "CLI examples"
       end
 
+      describe "dynamo_db" do
+        let(:klass)   { Terraforming::Resource::DynamoDB }
+        let(:command) { :dynamodb }
+
+        it_behaves_like "CLI examples"
+      end
+
       describe "ec2" do
         let(:klass)   { Terraforming::Resource::EC2 }
         let(:command) { :ec2 }
